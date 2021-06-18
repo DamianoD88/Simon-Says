@@ -2,6 +2,21 @@
 
 var randomNumeri = [];
 
+var numeri = 5;
+
+var numeroRandom = numeriRandom(1,100);
+console.log(numeroRandom);
+
+while(randomNumeri.length < numeri){
+    var numeroRandom = numeriRandom(1,100);
+    if(!randomNumeri.includes(numeroRandom)){
+        randomNumeri.push(numeroRandom);
+    }
+        
+};
+
+console.log(randomNumeri);
+
 function numeriRandom(min,max){
     return Math.floor(Math.random() * (max - min +1) + min);
 
