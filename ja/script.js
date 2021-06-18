@@ -17,6 +17,8 @@ while(randomNumeri.length < numeri){
 
 console.log(randomNumeri);
 
+alert(randomNumeri);
+
 function numeriRandom(min,max){
     return Math.floor(Math.random() * (max - min +1) + min);
 
