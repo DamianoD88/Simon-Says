@@ -19,6 +19,26 @@ console.log(randomNumeri);
 
 alert(randomNumeri);
 
+setTimeout(function(){
+    var users = [];
+
+    for(var i = 0; i < numeri; i++){
+        var numUtente = parseInt(prompt('Scrivi un numero'));
+        if(randomNumeri.includes(numUtente) && !users.includes(numUtente)){
+            users.push(numUtente);
+        }
+    }
+
+    console.log(users);
+
+    if(users.length == 0) {
+        console.log('non hai indovinato nessun numero');
+    }else {
+        console.log('hai indoviato ' + users.length + 'e sono : ' + users);
+    }
+
+}, 3000);
+
 function numeriRandom(min,max){
     return Math.floor(Math.random() * (max - min +1) + min);
 
